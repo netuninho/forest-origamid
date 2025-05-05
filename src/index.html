@@ -7,7 +7,7 @@
     <title>Forest</title>
     <link href="./output.css" rel="stylesheet">
 </head>
-<body class="bg-verde-800 font-sans">
+<body class="bg-verde-800 *:font-sans text-white">
     <div class="container mt-4 justify-center flex md:justify-start">
         <div class="inline-flex items-center rounded-md bg-verde-900">
             <span class="size-2 bg-verde-300 block rounded-full relative -left-1"></span>
@@ -18,5 +18,48 @@
             </div>
         </div>
     </div>
+
+    <header class="container flex justify-between gap-8 py-8 items-center">
+        <a href="#inicio">
+            <img src="./img/forest.svg" alt="Forest">
+        </a>
+
+        <nav>
+            <ul class="flex flex-wrap gap-8 text-xl *:hover:underline hover:underline-offset-8 cursor-pointer">
+                <li><a href="#acomodacoes"></a>Acomodações</li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#experiencias"></a>Experiências</li>
+                <li><a href="#contato"></a>Contato</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio" class="container">
+        <div class="relative bg-gradient-to-t from-verde-950/80 pt-64 px-8 pb-8 rounded-2xl overflow-hidden">
+            <img class="absolute inset-0 -z-10 size-full object-cover" src="./img/floresta.jpg" alt="">
+            
+            <div class="bg-verde-950 inline-flex items-center gap-8 py-1 pr-1 pl-4 rounded-full">
+                vagas para dezembro abertas
+                <a href="#contato" class="bg-verde-400 rounded-full text-verde-900 py-2 px-4 inline-block">Reserve Hoje</a>
+            </div>
+
+            <h1 class="mt-10 mb-20 text-6xl text-balance max-w-screen-sm font-serif ">Venha Experimentar a Vida na Floresta</h1>
+
+            <div class="flex justify-between items-end">
+                <p class="text-sm">Melhores locais para visitar 
+                    <a class="underline decoration-2 underline-offset-4 hover:no-underline" href="./">2029</a>
+                </p>
+
+                <div>
+                    <p class="uppercase mb-2">Recomendado por</p>
+                    <p class="flex items-center gap-4">
+                        <img class="w-28" src="./img/parceiros/wildbeast.svg" alt="Wildbeast">
+                        <span>|</span>
+                        Revista Nacional
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
