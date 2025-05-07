@@ -26,7 +26,7 @@
 
         <nav>
             <ul class="flex flex-wrap gap-8 text-xl *:hover:underline hover:underline-offset-8 cursor-pointer">
-                <li><a href="#acomodacoes"></a>Acomodações</li>
+                <li><a href="#acomodacoes">Acomodações</a></li>
                 <li><a href="#eventos">Eventos</a></li>
                 <li><a href="#experiencias"></a>Experiências</li>
                 <li><a href="#contato"></a>Contato</li>
@@ -61,5 +61,92 @@
             </div>
         </div>
     </main>
+
+    <!-- Acomodações -->
+    <section id="acomodacoes" class="container grid lg:grid-cols-[2fr_3fr] gap-8 mb-12 sm:mb-16 pt-16">
+        <div class="bg-[url('./img/padrao.svg')] content-end bg-no-repeat bg-contain bg-left-bottom">
+            <h2 class="mb-8 text-4xl font-serif lg:text-5xl">Refúgio Natural</h2>
+
+            <ul class="text-gray-200 *:flex *:items-center *:gap-4 space-y-4 sm:text-xl">
+                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Experimente a natureza de perto</li>
+                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Conecte-se com a natureza</li>
+                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Desconecte-se do digital</li>
+                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Observe a vida selvagem</li>
+                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Escolha a sua cabine preferida</li>
+            </ul>
+        </div>
+
+        <div class="grid lg:grid-cols-[2fr_1fr] gap-4 sm:gap-8">
+            <div class="col-span-full grid *:col-start-1 *:row-start-1">
+                <img class="rounded-xl h-52 w-full object-cover" src="./img/casa1.jpg" alt="Casa 1">
+                <span class="mt-2 mr-2 uppercase rounded-full bg-verde-950/60 px-4 py-2 text-sm/none self-start justify-self-end z-10">Ruby</span>
+            </div>
+
+            <div class="grid *:col-start-1 *:row-start-1">
+                <img class="rounded-xl size-full object-cover" src="./img/casa2.jpg" alt="Casa 2">
+                <span class="mt-2 mr-2 uppercase rounded-full bg-verde-950/60 px-4 py-2 text-sm/none self-start justify-self-end z-10">Emerald</span>
+            </div>
+
+            <div class="grid *:col-start-1 *:row-start-1">
+                <img class="rounded-xl size-full object-cover" src="./img/casa3.jpg" alt="Casa 3">
+                <span class="mt-2 mr-2 uppercase rounded-full bg-verde-950/60 px-4 py-2 text-sm/none self-start justify-self-end z-10">Saphire</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eventos -->
+    <section id="eventos" class="mb-12 sm:mb-16 py-12 sm:py-16 bg-verde-900">
+        <div class="container">
+            <p class="mb-4 text-center text-verde-200 uppercase tracking-widest text-sm">Conecte-se com a natureza</p>
+            <h2 class="capitalize mb-8 text-4xl sm:text-6xl text-center text-balance font-serif max-w-screen-md mx-auto">Cada som, cada momento, uma nova descoberta</h2>
+
+            <div class="grid grid-cols-[repeat(3,minmax(300px,1fr))] overflow-x-auto snap-x snap-mandatory pb-4 gap-4 sm:gap-8">
+                <div class="snap-center grid gap-4 bg-verde-800 p-6 sm:p-8 rounded-xl">
+                    <h3 class="text-verde-300 text-2xl font-serif">Lua Nova</h3>
+
+                    <div>
+                        <p class="font-serif text-5xl">23</p>
+                        <p class="text-xl">Março 2049</p>
+                    </div>
+
+                    <p class="text-gray-300 text-balance">
+                        Melhor período para obersavção astronômica. O céu estará claro e as estrelas visíveis.
+                    </p>
+
+                    <a class="bg-verde-400 rounded-full text-verde-900 py-2 px-4 inline-block justify-self-start self-end" href="#contato">Reservar 23/03</a>
+                </div>
+
+                <div class="snap-center grid gap-4 bg-verde-800 p-6 sm:p-8 rounded-xl">
+                    <h3 class="text-verde-300 text-2xl font-serif">Auroroa Boreal</h3>
+
+                    <div>
+                        <p class="font-serif text-5xl">15</p>
+                        <p class="text-xl">Abril 2049</p>
+                    </div>
+
+                    <p class="text-gray-300 text-balance">
+                        Melhor período para obersavção da Aurora Boreal, o céu estará iluminado pelas estrelas.
+                    </p>
+
+                    <a class="bg-verde-400 rounded-full text-verde-900 py-2 px-4 inline-block justify-self-start self-end" href="#contato">Reservar 15/04</a>
+                </div>
+
+                <div class="snap-center grid gap-4 bg-verde-800 p-6 sm:p-8 rounded-xl">
+                    <h3 class="text-verde-300 text-2xl font-serif">Chuva de Meteoros</h3>
+
+                    <div>
+                        <p class="font-serif text-5xl">18</p>
+                        <p class="text-xl">Agosto 2049</p>
+                    </div>
+
+                    <p class="text-gray-300 text-balance">
+                        Melhor período para obersavção da Chuva de Meteoros, o céu estará iluminado pelas estrelas.
+                    </p>
+
+                    <a class="bg-verde-400 rounded-full text-verde-900 py-2 px-4 inline-block justify-self-start self-end" href="#contato">Reservar 18/08</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
