@@ -387,6 +387,9 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
   .space-y-4 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -720,6 +723,11 @@
       font-family: var(--font-sans);
     }
   }
+  .\*\*\:max-h-8 {
+    :is(& *) {
+      max-height: calc(var(--spacing) * 8);
+    }
+  }
   .group-hover\:scale-110 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -797,6 +805,13 @@
       }
     }
   }
+  .hover\:text-verde-300 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-verde-300);
+      }
+    }
+  }
   .hover\:no-underline {
     &:hover {
       @media (hover: hover) {
@@ -823,6 +838,15 @@
       &:hover {
         @media (hover: hover) {
           text-decoration-line: underline;
+        }
+      }
+    }
+  }
+  .\*\*\:hover\:text-verde-300 {
+    :is(& *) {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--color-verde-300);
         }
       }
     }
@@ -867,6 +891,16 @@
   .max-sm\:flex-col {
     @media (width < 40rem) {
       flex-direction: column;
+    }
+  }
+  .max-sm\:flex-col-reverse {
+    @media (width < 40rem) {
+      flex-direction: column-reverse;
+    }
+  }
+  .max-sm\:gap-4 {
+    @media (width < 40rem) {
+      gap: calc(var(--spacing) * 4);
     }
   }
   .max-sm\:divide-y-2 {
@@ -973,6 +1007,11 @@
   .sm\:p-8 {
     @media (width >= 40rem) {
       padding: calc(var(--spacing) * 8);
+    }
+  }
+  .sm\:p-12 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 12);
     }
   }
   .sm\:py-1 {
