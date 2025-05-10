@@ -152,7 +152,7 @@
     <!-- Experiencias -->
     <section id="Experiencias" class="container mb-12 sm:mb-16 grid sm:grid-cols-2 gap-8">
         <div class="bg-verde-900 p-6 sm:p-8 rounded-xl">
-            <p class="mb-8 text-verde-200 uppercase tracking-widest text-sm">Experiências Excluisvas</p>
+            <p class="mb-8 text-verde-200 uppercase tracking-widest text-sm">Experiências Exclusivas</p>
             <h2 class="capitalize mb-8 text-3xl sm:text-4xl lg:text-5xl text-balance font-serif">Escolha Sua Próxima Aventura</h2>
             
             <h3 class="text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-verde-400 hover:before:w-10 before:transition-[width]">Observação Noturna</h3>
@@ -205,7 +205,7 @@
 
                 <h3 class="font-serif text-2xl">Amanhecer</h3>
                 <p class="text-gray-400">
-                    Desperte com o canto dos pássaros e participe das noccas caminhadas ao ar livre.
+                    Desperte com o canto dos pássaros e participe das nossas caminhadas ao ar livre.
                 </p>
                 <span class="text-verde-300">05:40 - 07:00</span>
             </div>
@@ -229,11 +229,67 @@
 
                 <h3 class="font-serif text-2xl">Anoitecer</h3>
                 <p class="text-gray-400">
-                    Termine seu dia com nossa sessçao de observação de estrelas.
+                    Termine seu dia com nossa sessão de observação de estrelas.
                 </p>
                 <span class="text-verde-300">19:00 - 21:00</span>
             </div>
         </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="container mb-12 sm:mb-16 grid lg:grid-cols-2 gap-8">
+        <div>
+            <h1 class="font-serif text-4xl text-verde-300 mb-4">Nossos Contatos</h1>
+            <p class="text-gray-200 text-balance mb-8">
+                Tem interesse em passar uma temporada na Forest? Entre em contato com a gente por telefone ou email.
+            </p>
+
+            <div class="grid gap-4">
+                <div>
+                    <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+                    <h2 class="mb-2 text-2xl text-verde-300 font-serif">Base</h2>
+                    <p class="text-gray-300">Rua da Mata, 123 - Floresta Nacional - RJ</p>
+                </div>
+
+                <div>
+                    <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+                    <h2 class="mb-2 text-2xl text-verde-300 font-serif">Email</h2>
+                    <p class="text-gray-300">contato@forest.com</p>
+                </div>
+
+                <div>
+                    <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+                    <h2 class="mb-2 text-2xl text-verde-300 font-serif">Telefone</h2>
+                    <p class="text-gray-300">21 99999-9999</p>
+                </div>
+            </div>
+        </div>
+
+        <form class="grid gap-4 rounded-xl bg-verde-900 shadow-2xl p-4 lg:p-8" action="">
+            <div class="grid gap-1">
+                <label for="nome">Nome</label>
+                <input class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900" type="text" id="nome" name="nome" placeholder="Manuela Santos Silva">
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="grid gap-1">
+                    <label for="email">Email</label>
+                    <input class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900" type="email" id="email" name="email" placeholder="exemplo@gmail.com">
+                </div>
+
+                <div class="grid gap-1">
+                    <label for="telefone">Nome</label>
+                    <input class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900" type="text" id="telefone" name="telefone" placeholder="(21) 99999-9999">
+                </div>
+            </div>
+
+            <div class="grid gap-1">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900 resize-none" rows="5" placeholder="Fale com a gente :)" id="mensagem" name="mensagem"></textarea>
+            </div>
+
+            <button class="cursor-pointer place-self-center bg-verde-400 rounded-full text-verde-900 py-2 px-4 inline-block">Enviar email</button>
+        </form>
     </section>
 </body>
 </html>
