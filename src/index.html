@@ -6,6 +6,7 @@
     <link rel="icon" href="/favicon.png" type="image/png">
     <title>Forest</title>
     <link href="./output.css" rel="stylesheet">
+    <script src="index.js" defer></script>
 </head>
 <body class="bg-verde-800 *:font-sans text-white">
     <div class="container mt-4 justify-center flex md:justify-start">
@@ -24,14 +25,26 @@
             <img src="./img/forest.svg" alt="Forest">
         </a>
 
-        <nav>
-            <ul class="flex flex-wrap gap-8 text-xl *:hover:underline hover:underline-offset-8 cursor-pointer">
-                <li><a href="#acomodacoes">Acomodações</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#experiencias"></a>Experiências</li>
-                <li><a href="#contato"></a>Contato</li>
+        <nav id="menu-mobile" class="z-40 hidden lg:block items-center max-lg:fixed max-lg:w-full max-lg:inset-0">
+            <div class="fixed lg:hidden inset-0 bg-verde-950/40 backdrop-blur-md"></div>
+
+            <ul class="lg:flex lg:flex-wrap max-lg:z-50 max-lg:absolute max-lg:p-8 max-lg:w-full text-2xl lg:gap-8 max-lg:divide-y-2 max-lg:divide-white/10 lg:text-xl max-lg:*:*:hover:bg-white/10 lg:*:hover:underline lg:hover:underline-offset-8 lg:*:*:px-0 lg:*:*:py-2 cursor-pointer *:*:p-4 *:*:block">
+                <li class="animate-1 opacity-0 animate-slide-in"><a href="#acomodacoes">Acomodações</a></li>
+                <li class="animate-2 opacity-0 animate-slide-in"><a href="#eventos">Eventos</a></li>
+                <li class="animate-3 opacity-0 animate-slide-in"><a href="#experiencias">Experiências</a></li>
+                <li class="animate-4 opacity-0 animate-slide-in"><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+
+        <button id="btn-mobile" class="flex items-center gap-3 bg-verde-400 rounded-full text-verde-900 py-2 px-4 lg:hidden">
+            Menu
+
+            <span class="h-3 w-4 flex flex-col justify-between *:h-0.5 *:rounded-md *:bg-verde-800">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </button>
     </header>
 
     <main id="inicio" class="container">
@@ -150,7 +163,7 @@
     </section>
 
     <!-- Experiencias -->
-    <section id="Experiencias" class="container mb-12 sm:mb-16 grid sm:grid-cols-2 gap-8">
+    <section id="experiencias" class="container mb-12 sm:mb-16 grid sm:grid-cols-2 gap-8">
         <div class="bg-verde-900 p-6 sm:p-8 rounded-xl">
             <p class="mb-8 text-verde-200 uppercase tracking-widest text-sm">Experiências Exclusivas</p>
             <h2 class="capitalize mb-8 text-3xl sm:text-4xl lg:text-5xl text-balance font-serif">Escolha Sua Próxima Aventura</h2>
@@ -278,7 +291,7 @@
                 </div>
 
                 <div class="grid gap-1">
-                    <label for="telefone">Nome</label>
+                    <label for="telefone">Telefone</label>
                     <input class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900" type="text" id="telefone" name="telefone" placeholder="(21) 99999-9999">
                 </div>
             </div>
@@ -294,7 +307,7 @@
 
     <!-- Parceiros -->
     <section id="parceiros" class="container mb-12 sm:mb-16">
-        <ul class="flex flex-col items-center justify-center py-4 max-sm:divide-y-2 max-sm:divide-verde-900 *:p-4 **:max-h-8 sm:flex-row sm:gap-8 sm:border-b-2 sm:border-t-2 sm:border-verde-900 sm:py-8">
+        <ul class="flex flex-col items-center justify-center py-4 max-sm:divide-y-2 max-sm:divide-verde-900 *:p-4 *:*:max-h-8 sm:flex-row sm:gap-8 sm:border-b-2 sm:border-t-2 sm:border-verde-900 sm:py-8">
             <li><img src="./img/parceiros/caravan.svg" alt="Caravan"></li>
             <li><img src="./img/parceiros/dogs.svg" alt="Dogs"></li>
             <li><img src="./img/parceiros/wildbeast.svg" alt="Wildbeast"></li>
@@ -321,7 +334,7 @@
                 </div>
             </div>
 
-            <div class="justify-self-end">
+            <div class="lg:justify-self-end">
                 <img class="mb-4" src="./img/forest.svg" alt="Forest">
                 <p class="text-gray-400">Conecte-se com a natureza</p>
             </div>
