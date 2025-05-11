@@ -46,6 +46,7 @@
     --color-verde-900: #0f1c15;
     --color-verde-950: #030504;
     --animate-slide-in: slideIn 0.4s ease-in-out forwards;
+    --animate-fade-in: fadeIn 0.4s ease-in-out forwards;
   }
 }
 @layer base {
@@ -347,6 +348,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .animate-fade-in {
+    animation: var(--animate-fade-in);
   }
   .animate-slide-in {
     animation: var(--animate-slide-in);
@@ -1645,6 +1649,14 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @layer properties {
