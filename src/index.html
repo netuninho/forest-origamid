@@ -11,7 +11,7 @@
 <body class="bg-verde-800 *:font-sans text-white">
     <div class="container mt-4 justify-center flex md:justify-start">
         <div class="inline-flex items-center rounded-md bg-verde-900">
-            <span class="size-2 bg-verde-300 block rounded-full relative -left-1"></span>
+            <span class="size-2 neon block relative -left-1"></span>
             <div class="flex text-verde-300 divide-x-2 divide-verde-800 *:px-4 *:py-2">
                 <div class="capitalize" id="dia">segunda</div>
                 <div id="temperatura">25°</div>
@@ -36,7 +36,7 @@
             </ul>
         </nav>
 
-        <button id="btn-mobile" class="flex items-center gap-3 bg-verde-400 rounded-full text-verde-900 py-2 px-4 lg:hidden">
+        <button id="btn-mobile" class="flex items-center py-1 gap-3 btn lg:hidden">
             Menu
 
             <span class="h-3 w-4 flex flex-col justify-between *:h-0.5 *:rounded-md *:bg-verde-800">
@@ -53,12 +53,15 @@
             <video 
                 id="video" width="1280" height="720" 
                 muted autoplay playsinline loop 
-                class="absolute inset-0 -z-10 size-full object-cover animate-fade-in" src="./img/video_chuva.mp4"
-            ></video>
+                class="absolute inset-0 -z-10 size-full object-cover animate-fade-in" src="./img/video_chuva.mp4">
+            </video>
             
             <div class="bg-verde-950/60 sm:bg-verde-950 flex max-sm:flex-col gap-2 p-4 sm:inline-flex items-center sm:gap-8 sm:py-1 sm:pr-1 sm:pl-4 rounded-xl sm:rounded-full">
                 vagas para dezembro abertas
-                <a href="#contato" class="bg-verde-400 rounded-full text-verde-900 py-2 px-4 inline-block">Reserve Hoje</a>
+                <a href="#contato" class="btn inline-flex items-center gap-2">
+                    Reserve Hoje
+                    <img src="./img/seta.svg" alt="">
+                </a>
             </div>
 
             <h1 class="mt-10 mb-8 sm:mb-20 text-4xl sm:text-6xl text-balance max-w-screen-sm font-serif ">Venha Experimentar a Vida na Floresta</h1>
@@ -81,16 +84,16 @@
     </main>
 
     <!-- Acomodações -->
-    <section id="acomodacoes" class="container grid lg:grid-cols-[2fr_3fr] gap-8 mb-12 sm:mb-16 pt-16">
+    <section id="acomodacoes" class="radial-gradient container grid lg:grid-cols-[2fr_3fr] gap-8 mb-12 sm:mb-16 pt-16">
         <div class="bg-[url('./img/padrao.svg')] content-end bg-no-repeat bg-contain bg-left-bottom">
             <h2 class="mb-8 text-4xl font-serif lg:text-5xl">Refúgio Natural</h2>
 
             <ul class="text-gray-200 *:flex *:items-center *:gap-4 space-y-4 sm:text-xl">
-                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Experimente a natureza de perto</li>
-                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Conecte-se com a natureza</li>
-                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Desconecte-se do digital</li>
-                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Observe a vida selvagem</li>
-                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Escolha a sua cabine preferida</li>
+                <li><span class="h-0.5 w-6 neon inline-block"></span>Experimente a natureza de perto</li>
+                <li><span class="h-0.5 w-6 neon inline-block"></span>Conecte-se com a natureza</li>
+                <li><span class="h-0.5 w-6 neon inline-block"></span>Desconecte-se do digital</li>
+                <li><span class="h-0.5 w-6 neon inline-block"></span>Observe a vida selvagem</li>
+                <li><span class="h-0.5 w-6 neon inline-block"></span>Escolha a sua cabine preferida</li>
             </ul>
         </div>
 
@@ -131,7 +134,7 @@
                         Melhor período para obersavção astronômica. O céu estará claro e as estrelas visíveis.
                     </p>
 
-                    <a class="bg-verde-400 rounded-full text-verde-900 py-2 px-4 inline-block justify-self-start self-end" href="#contato">Reservar 23/03</a>
+                    <a class="btn inline-block justify-self-start self-end" href="#contato">Reservar 23/03</a>
                 </div>
 
                 <div class="snap-center grid gap-4 bg-verde-800 p-6 sm:p-8 rounded-xl">
@@ -146,7 +149,7 @@
                         Melhor período para obersavção da Aurora Boreal, o céu estará iluminado pelas estrelas.
                     </p>
 
-                    <a class="bg-verde-400 rounded-full text-verde-900 py-2 px-4 inline-block justify-self-start self-end" href="#contato">Reservar 15/04</a>
+                    <a class="btn inline-block justify-self-start self-end" href="#contato">Reservar 15/04</a>
                 </div>
 
                 <div class="snap-center grid gap-4 bg-verde-800 p-6 sm:p-8 rounded-xl">
@@ -161,7 +164,7 @@
                         Melhor período para obersavção da Chuva de Meteoros, o céu estará iluminado pelas estrelas.
                     </p>
 
-                    <a class="bg-verde-400 rounded-full text-verde-900 py-2 px-4 inline-block justify-self-start self-end" href="#contato">Reservar 18/08</a>
+                    <a class="btn inline-block justify-self-start self-end" href="#contato">Reservar 18/08</a>
                 </div>
             </div>
         </div>
@@ -217,7 +220,7 @@
       
         <div class="flex flex-col sm:flex-row gap-4 sm:gap-8">
             <div class="grid gap-4 flex-1 bg-verde-900 p-6 sm:p-8 rounded-xl sm:hover:-translate-y-2 transition-transform">
-                <div class="bg-verde-400 size-10 flex items-center justify-center rounded-full">
+                <div class="neon size-10 flex items-center justify-center rounded-full">
                     <img src="./img/manha.svg" alt="">
                 </div>
 
@@ -229,7 +232,7 @@
             </div>
 
             <div class="grid gap-4 flex-1 bg-verde-900 p-6 sm:p-8 rounded-xl sm:translate-y-12 sm:hover:translate-y-10 transition-transform">
-                <div class="bg-verde-400 size-10 flex items-center justify-center rounded-full">
+                <div class="neon size-10 flex items-center justify-center">
                     <img src="./img/dia.svg" alt="">
                 </div>
 
@@ -241,7 +244,7 @@
             </div>
 
             <div class="grid gap-4 flex-1 bg-verde-900 p-6 sm:p-8 rounded-xl sm:hover:-translate-y-2 transition-transform">
-                <div class="bg-verde-400 size-10 flex items-center justify-center rounded-full">
+                <div class="neon size-10 flex items-center justify-center">
                     <img src="./img/noite.svg" alt="">
                 </div>
 
@@ -264,19 +267,19 @@
 
             <div class="grid gap-4">
                 <div>
-                    <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+                    <span class="h-0.5 w-6 neon inline-block"></span>
                     <h2 class="mb-2 text-2xl text-verde-300 font-serif">Base</h2>
                     <p class="text-gray-300">Rua da Mata, 123 - Floresta Nacional - RJ</p>
                 </div>
 
                 <div>
-                    <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+                    <span class="h-0.5 w-6 neon inline-block"></span>
                     <h2 class="mb-2 text-2xl text-verde-300 font-serif">Email</h2>
                     <p class="text-gray-300">contato@forest.com</p>
                 </div>
 
                 <div>
-                    <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+                    <span class="h-0.5 w-6 neon inline-block"></span>
                     <h2 class="mb-2 text-2xl text-verde-300 font-serif">Telefone</h2>
                     <p class="text-gray-300">21 99999-9999</p>
                 </div>
@@ -286,27 +289,27 @@
         <form class="grid gap-4 rounded-xl bg-verde-900 shadow-2xl p-4 lg:p-8" action="">
             <div class="grid gap-1">
                 <label for="nome">Nome</label>
-                <input class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900" type="text" id="nome" name="nome" placeholder="Manuela Santos Silva">
+                <input class="input" type="text" id="nome" name="nome" placeholder="Manuela Santos Silva">
             </div>
 
             <div class="grid gap-4 sm:grid-cols-2">
                 <div class="grid gap-1">
                     <label for="email">Email</label>
-                    <input class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900" type="email" id="email" name="email" placeholder="exemplo@gmail.com">
+                    <input class="input" type="email" id="email" name="email" placeholder="exemplo@gmail.com">
                 </div>
 
                 <div class="grid gap-1">
                     <label for="telefone">Telefone</label>
-                    <input class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900" type="text" id="telefone" name="telefone" placeholder="(21) 99999-9999">
+                    <input class="input" type="text" id="telefone" name="telefone" placeholder="(21) 99999-9999">
                 </div>
             </div>
 
             <div class="grid gap-1">
                 <label for="mensagem">Mensagem</label>
-                <textarea class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900 resize-none" rows="5" placeholder="Fale com a gente :)" id="mensagem" name="mensagem"></textarea>
+                <textarea class="input resize-none" rows="5" placeholder="Fale com a gente :)" id="mensagem" name="mensagem"></textarea>
             </div>
 
-            <button class="cursor-pointer place-self-center bg-verde-400 rounded-full text-verde-900 py-2 px-4 inline-block">Enviar email</button>
+            <button class="place-self-center btn inline-block">Enviar email</button>
         </form>
     </section>
 

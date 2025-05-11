@@ -482,9 +482,6 @@
   .border-verde-800 {
     border-color: var(--color-verde-800);
   }
-  .bg-verde-300 {
-    background-color: var(--color-verde-300);
-  }
   .bg-verde-400 {
     background-color: var(--color-verde-400);
   }
@@ -556,6 +553,9 @@
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -747,11 +747,6 @@
       }
     }
   }
-  .\*\:animate-slide-in {
-    :is(& > *) {
-      animation: var(--animate-slide-in);
-    }
-  }
   .\*\:items-center {
     :is(& > *) {
       align-items: center;
@@ -797,11 +792,6 @@
   .\*\:font-sans {
     :is(& > *) {
       font-family: var(--font-sans);
-    }
-  }
-  .\*\:opacity-0 {
-    :is(& > *) {
-      opacity: 0%;
     }
   }
   .group-hover\:scale-110 {
